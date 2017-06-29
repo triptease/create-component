@@ -3,7 +3,7 @@ export default {
     type: 'list',
     name: 'type',
     message: 'What kind of components do you want to create?',
-    choices: ['class', 'stateless', 'pure'],
+    choices: ['class', 'pure', 'stateless'],
   },
   name: {
     type: 'input',
@@ -26,7 +26,7 @@ export default {
   cssExtension: {
     type: 'list',
     name: 'cssExtension',
-    message: 'What kind of extension do you use for css files?',
+    message: 'What kind of styles do you want to use?',
     choices: ['css', 'styles.js', 'none'],
   },
   includeStories: {
@@ -45,6 +45,6 @@ export default {
     type: 'input',
     name: 'path',
     message: 'Where do you want create your component?',
-    default: './src/components',
+    default: './',
   },
 };
