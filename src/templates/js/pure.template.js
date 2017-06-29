@@ -1,25 +1,24 @@
-function generatePureComponent(COMPONENT_NAME) {
-  return `import React, { PureComponent } from 'react'
-import PropTypes from 'prop-types'
+export default function generatePureComponent(COMPONENT_NAME) {
+  return `import React, { PureComponent } from 'react';
+import PropTypes from 'prop-types';
 
-class ${COMPONENT_NAME} extends PureComponent {
-    constructor(props) {
-        super(props)
-    }
+export default class ${COMPONENT_NAME} extends PureComponent {
+  static propTypes = {
+  
+  };
+  
+  static defaultProps = {
+  
+  };
 
-    render() {
-        return (
-            <div className="${COMPONENT_NAME}"></div>
-        );
-    }
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    return (
+      <div className="${COMPONENT_NAME}"></div>
+    );
+  }
+}`
 }
-
-${COMPONENT_NAME}.propTypes = {}
-
-${COMPONENT_NAME}.defaultProps = {}
-
-export default ${COMPONENT_NAME}
-`
-}
-
-export default generatePureComponent

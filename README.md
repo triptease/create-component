@@ -21,7 +21,7 @@ $ npm install -g create-component-app
 
 ```sh
 $ cd ~/my-projects
-$ create-component-app
+$ create-component
 ```
 
 ### You can specify default values to save a lot of time
